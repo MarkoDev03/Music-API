@@ -1,5 +1,5 @@
 import Song from "../models/Song.js";
-import Playlist from "../models/PlayList.js";
+import Playlist from "../models/Playlist.js";
 import mongoose from "mongoose"
 
 //songs/add-new

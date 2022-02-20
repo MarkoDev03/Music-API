@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 import Song from "../models/Song.js"
 import User from "../models/User.js"
-import Playlist from "../models/PlayList.js"
+import Playlist from "../models/Playlist.js"
 
 //playlist/my-playlists
 export const MyPlaylists = async (req, res) => {
