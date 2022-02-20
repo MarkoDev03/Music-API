@@ -2,7 +2,7 @@ import User from "../models/User.js";
 import CryptoJS from "crypto-js";
 import nodemailer from "nodemailer";
 import mongoose from "mongoose";
-import Playlist from "../models/PlayList.js";
+import Playlist from "../models/Playlist.js";
 
 //auth/sign-up
 export const SignUp = async (req, res) => {
