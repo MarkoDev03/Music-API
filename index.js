@@ -29,3 +29,7 @@ mongoose.connect(process.env.DB_URI, {
 app.listen(process.env.PORT, () => {
     console.log("App is alive!")
 })
+
+app.get("/", (req, res) => {
+    res.send("API")
+})
