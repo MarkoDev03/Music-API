@@ -21,12 +21,12 @@ app.use("/api/playlist", Playlist)
 
 mongoose.connect(process.env.DB_URI, {
 }).then(() => {
-//
+    console.log("Connected!")
 }).catch((error) => {
     console.log(error) 
 })
 
-let port = process.env.PORT || 5001
+let port = process.env.PORT || 5003
 
 app.listen(port, () => {
     console.log("App is alive!")
