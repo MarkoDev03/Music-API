@@ -70,7 +70,6 @@ export const SignUp = async (req, res) => {
           }
       });
 
-
   } catch (error) {
     res.setHeader('Content-Type', 'application/json')
     return res.status(500).json({ message: error.message });

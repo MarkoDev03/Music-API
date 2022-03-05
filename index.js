@@ -26,7 +26,7 @@ mongoose.connect(process.env.DB_URI, {
     console.log(error) 
 })
 
-let port = process.env.PORT || 5003
+let port = process.env.PORT || 5000
 
 app.listen(port, () => {
     console.log("App is alive!")
