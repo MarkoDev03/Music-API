@@ -345,7 +345,7 @@ export const RequestForgotPasswordEmail = async (req, res) => {
       service: "gmail",
       auth: {
         user: "jasampogodinko1234@gmail.com",
-        pass: "Jasam1234#",
+        pass: "---",
       },
     });
 
