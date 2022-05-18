@@ -182,7 +182,7 @@ export const VerifyRegistrationCode = async (req, res) => {
 
   try {
     if (!mongoose.Types.ObjectId(id)) {
-      return   res.status(404).json({ message: "User not found!" });
+      return  res.status(404).json({ message: "User not found!" });
     }
 
     let user = await User.findById(id);
@@ -642,7 +642,7 @@ export const DeleteMultipleUsers = async (req, res) => {
           Playlist.findByIdAndDelete(playlist._id, (error, docs) => {
             if (error) {
               res.setHeader('Content-Type', 'application/json')
-              return   res.status(400).json(err);
+              return  res.status(400).json(err);
             } else {
               res.status(200).json(docs);
             }
